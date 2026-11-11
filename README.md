@@ -52,7 +52,7 @@ Customize the look of your map interface. SexierMap focuses on the visual side o
 ### TalentSuggester
 
 A talent-choice helper for planning your character's progression. TalentSuggester focuses on recommendations to help you decide where to spend talent points.
-
+# In game type /tsug to open addon.
 <p align="center">
   <a href="https://github.com/user-attachments/assets/e5806a9b-aab3-4454-933b-157f33222105">
     <img src="https://github.com/user-attachments/assets/e5806a9b-aab3-4454-933b-157f33222105" alt="TalentSuggester screenshot 1" width="720" />
