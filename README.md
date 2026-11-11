@@ -1,6 +1,6 @@
 # WoW Forever Addons
 
-A growing collection of addons by **Deathbringer98** for WoW Forever, covering inventory convenience, animated portraits, map customization, dungeon maps, talent guidance, and in-game entertainment.
+A growing collection of addons by **Deathbringer98** for WoW Forever, covering inventory convenience, animated portraits, map customization, dungeon maps, rare alerts, spell suggestions, talent guidance, and in-game entertainment.
 
 ## Addons and downloads
 
@@ -9,11 +9,13 @@ Download individual addons below, or use **Code > Download ZIP** to get the whol
 | Addon | What it does | Package version | Download |
 | --- | --- | --- | --- |
 | **BetterWorldMap / Gatherer** | Reveals unexplored map areas and marks flight points, ore, herbs, and skinnable beasts. | 1.0.1 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/BetterWorldMapGatherer-1.0.1.zip) |
+| **Casty** | Suggests the next spell to cast with a glowing box, for every class, and switches between PvE and PvP on its own. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/Casty-1.0.0.zip) |
 | **DungeonGuide** | Maps of every dungeon and raid with every boss marked on them. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/DungeonGuide-1.0.0.zip) |
 | **ForeverOneBag** | Combines your backpack and equipped bags into one inventory window. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/ForeverOneBag.zip) |
 | **Living Portraits** | Replaces flat unit frame portraits with live, animated 3D heads in the style of Warcraft III. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/LivingPortraits-1.0.0.zip) |
 | **Rare Alert** | Warns you when a rare mob shows up near you and lists your zone's rares with their spawn spots. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/RareAlert-1.0.0.zip) |
 | **SexierMap** | A map appearance and customization addon. | 2.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/SexierMap-2.0.0.zip) |
+| **Shift-Click Returns** | Shift-click a player's name to invite them to your group or guild, whisper, add as a friend, look up, or copy. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/Shift-Click_returns-1.0.0.zip) |
 | **TalentSuggester** | Provides guidance on talent choices while developing your character. | 1.1.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/TalentSuggester-1.1.0.zip) |
 | **Warcraft Pinball** | Adds a Warcraft-themed pinball minigame to play inside WoW. | 3.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/WarcraftPinball_Forever_v3.0.zip) |
 | **Warcraft Tetris** | A falling-blocks puzzle game you play inside WoW. Open it from the minimap button or with `/tetris`. | 1.1.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/WarcraftTetris-1.1.0.zip) |
@@ -35,6 +37,22 @@ Adds a world-map panel with switches for unexplored map artwork, flight points, 
 **Version 1.0.1:** Fixes map reveal artwork covering node, beast, and flight markers by keeping their frame order above the exploration pins, including after map refreshes. Regression mocks check changing frame levels/strata and unchanged node counts when reveal is toggled. Also includes the earlier marker texture-path fix. The Elwynn test now uses Forever's artwork ID and draws 18 reveal tiles. Lua 5.1 syntax and automated mock checks pass; **in-game validation is still pending**.
 
 **Data and license:** Map overlays and flight points were extracted from Forever client tables via wago.tools. Ore, herb, and beast positions derive from [CMaNGOS classic-db](https://github.com/cmangos/classic-db); this addon is distributed under **GPL-3.0**, as stated in its included README. These spawn locations describe the original game and may differ in Forever. A node marker indicates a possible spawn, not a currently available resource.
+
+---
+
+### Casty
+
+Suggests the next spell to cast. The suggested spell gets a glowing box in two places: a suggestion box with the spell's icon, key binding, and the next two spells, and a glow on the action bar button that holds it.
+
+- Rotations for all nine classes, each talent tree, and both PvE and PvP: 54 priority lists, with every spell name checked against WoW Forever's spells.
+- On Auto, it uses the PvP rotation in battlegrounds, arenas, and against enemy players, and the PvE rotation everywhere else. PvP lists lead with control and burst.
+- In PvE it uses Blizzard's own rotation helper first when the game offers one for your class.
+- Healing trees get their class's damage spells, since an addon cannot see who needs healing.
+- Every setting is a button: style (Auto, PvE, PvP), talent tree, Blizzard helper, action bar glow, suggestion box, lock, size, and minimap button.
+
+**Open it:** click the blue sparkle on the minimap, pick Casty from the minimap addon menu, or type `/casty`.
+
+**What it can see:** in combat WoW Forever hides mob debuffs, real cooldowns, health, and your resources from addons. Casty times your damage over time, buffs, and cooldowns from your own casts, shows procs only while the game makes the spell glow, and shows Overpower, Revenge, Execute, and similar spells only when the game says they can be cast. It cannot see resists, dispels, or a target's health. Rotations are plain lists in `Rotations.lua` that anyone can edit. Automated mock checks pass for all nine classes; **in-game validation is still pending**.
 
 ---
 
@@ -115,6 +133,20 @@ Customize the look of your map interface. SexierMap focuses on the visual side o
     <img src="https://github.com/user-attachments/assets/a581afd2-c803-4e37-a7b4-8b69607d41d6" alt="SexierMap screenshot 3" width="485" />
   </a>
 </p>
+
+---
+
+### Shift-Click Returns
+
+Shift-click a player's name and do something with it in one click.
+
+- Shift-click a player's name in chat, or their target, focus, or party frame, and the name lands in a small window.
+- Buttons: **Invite to group**, **Invite to guild**, **Whisper**, **Add friend**, **Who is this?**, and **Copy name** (selects it so Ctrl+C copies it), plus **My target** and a list of the last 8 names.
+- If Blizzard's guild invite, Add Friend, Add Ignore, or channel invite box is open, the name goes straight into it instead.
+- While you are typing in chat, shift-clicking a name still puts it into your message as normal.
+- Every setting is a button: chat names, unit frames, fill invite boxes, and minimap button.
+
+**Open it:** click the green arrow on the minimap, pick it from the minimap addon menu, or type `/scr`. Automated mock checks pass; **in-game validation is still pending**.
 
 ---
 
