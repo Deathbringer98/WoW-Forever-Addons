@@ -15,7 +15,7 @@ Download individual addons below, or use **Code > Download ZIP** to get the whol
 | **Living Portraits** | Replaces flat unit frame portraits with live, animated 3D heads in the style of Warcraft III. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/LivingPortraits-1.0.0.zip) |
 | **Rare Alert** | Warns you when a rare mob shows up near you and lists your zone's rares with their spawn spots. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/RareAlert-1.0.0.zip) |
 | **SexierMap** | A map appearance and customization addon. | 2.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/SexierMap-2.0.0.zip) |
-| **Shift-Click Returns** | Shift-click a player's name to invite them to your group or guild, whisper, add as a friend, look up, or copy. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/Shift-Click_returns-1.0.0.zip) |
+| **Shift-Click Returns** | Shift-click a player's name to invite them to your group or guild, whisper, add as a friend, look up, or copy. | 1.1.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/Shift-Click_returns-1.1.0.zip) |
 | **TalentSuggester** | Provides guidance on talent choices while developing your character. | 1.1.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/TalentSuggester-1.1.0.zip) |
 | **Warcraft Pinball** | Adds a Warcraft-themed pinball minigame to play inside WoW. | 3.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/WarcraftPinball_Forever_v3.0.zip) |
 | **Warcraft Tetris** | A falling-blocks puzzle game you play inside WoW. Open it from the minimap button or with `/tetris`. | 1.1.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/WarcraftTetris-1.1.0.zip) |
@@ -141,12 +141,15 @@ Customize the look of your map interface. SexierMap focuses on the visual side o
 Shift-click a player's name and do something with it in one click.
 
 - Shift-click a player's name in chat, or their target, focus, or party frame, and the name lands in a small window.
-- Buttons: **Invite to group**, **Invite to guild**, **Whisper**, **Add friend**, **Who is this?**, and **Copy name** (selects it so Ctrl+C copies it), plus **My target** and a list of the last 8 names.
+- Buttons: **Invite to group**, **Invite to guild**, **Add friend**, **Who is this?**, **Whisper** (puts a link to them in your chat window; click it to start the whisper), and **Copy name** (selects it so Ctrl+C copies it), plus **My target** and a list of the last 8 names.
+- The window closes during combat. A name you shift-click mid-fight is saved and the window opens with it when the fight ends.
 - If Blizzard's guild invite, Add Friend, Add Ignore, or channel invite box is open, the name goes straight into it instead.
 - While you are typing in chat, shift-clicking a name still puts it into your message as normal.
 - Every setting is a button: chat names, unit frames, fill invite boxes, and minimap button.
 
 **Open it:** click the green arrow on the minimap, pick it from the minimap addon menu, or type `/scr`. Automated mock checks pass; **in-game validation is still pending**.
+
+**Version 1.1.0:** Fixes the "has been blocked from an action only available to the Blizzard UI" message in 1.0.0, which called the game's invite, friend, and who functions directly. Each button now runs the slash command you would type yourself (`/invite`, `/ginvite`, `/friend`, `/who`), which the game allows, and Whisper no longer opens the chat box itself.
 
 ---
 
