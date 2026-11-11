@@ -1,6 +1,6 @@
 # WoW Forever Addons
 
-A growing collection of addons by **Deathbringer98** for WoW Forever, covering inventory convenience, animated portraits, map customization, dungeon maps, rare alerts, spell suggestions, talent guidance, and in-game entertainment.
+A growing collection of addons by **Deathbringer98** for WoW Forever, covering inventory convenience, easy healing, animated portraits, map customization, dungeon maps, rare alerts, spell suggestions, talent guidance, and in-game entertainment.
 
 ## Addons and downloads
 
@@ -11,6 +11,7 @@ Download individual addons below, or use **Code > Download ZIP** to get the whol
 | **BetterWorldMap / Gatherer** | Reveals unexplored map areas and marks flight points, ore, herbs, and skinnable beasts. | 1.0.1 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/BetterWorldMapGatherer-1.0.1.zip) |
 | **Casty** | Suggests the next spell to cast with a glowing box, for every class, and switches between PvE and PvP on its own. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/Casty-1.0.0.zip) |
 | **DungeonGuide** | Maps of every dungeon and raid with every boss marked on them. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/DungeonGuide-1.0.0.zip) |
+| **Easy Heals** | Click-to-heal frames made for new healers: click a name to heal it, with a key that shows every click. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/EasyHeals-1.0.0.zip) |
 | **ForeverOneBag** | Combines your backpack and equipped bags into one inventory window. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/ForeverOneBag.zip) |
 | **Living Portraits** | Replaces flat unit frame portraits with live, animated 3D heads in the style of Warcraft III. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/LivingPortraits-1.0.0.zip) |
 | **Rare Alert** | Warns you when a rare mob shows up near you and lists your zone's rares with their spawn spots. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/RareAlert-1.0.0.zip) |
@@ -68,6 +69,23 @@ A dungeon atlas. Pick any dungeon or raid to see its map floor by floor, with ev
 **Commands:** `/dg` opens the guide on the dungeon you are in. `/dg deadmines` opens a dungeon by name, `/dg auto` opens the guide whenever you enter a dungeon, and `/dg help` lists the commands.
 
 **Data and license:** Dungeon and boss lists come from Forever client tables via wago.tools. Boss positions derive from [CMaNGOS classic-db](https://github.com/cmangos/classic-db) spawn points; this addon is distributed under **GPL-3.0**, as stated in its included README. Positions describe the original game, and in dungeons with stacked floors a few bosses may show on the wrong floor. Automated mock checks pass; **in-game validation is still pending**.
+
+---
+
+### Easy Heals
+
+Healing made easy for new players. Your group shows up as shiny health bars, and you heal someone by clicking their name: no targeting, no macros, nothing to set up.
+
+- **Click to heal:** left-click a name to heal that player. Right, middle, Shift, Ctrl, and Alt clicks give your other heals, shields, cures, and resurrection. Priest, Paladin, Druid, and Shaman are set up out of the box, and spells you have not learned yet are skipped.
+- **A click key:** a pink "How to heal" panel next to the bars shows every click with its spell icon, and hovering a name shows it too.
+- **Flashy bars:** glossy bars that turn from green to yellow to red as health drops, a pulsing red glow on anyone below half health, faded frames for players out of range, a sparkle on every click, and a beating-heart title bar.
+- **Works everywhere:** shows just you when solo, your party in a group, and a 40-player grid in a raid.
+- **Welcome guide:** a short guide pops up the first time and explains everything.
+- Every setting is a button: lock frames, click key, health %, hover help, size, and minimap button.
+
+**Open settings:** click the heart on the minimap, the `*` on the title bar, or type `/eh`.
+
+**How it plays by the rules:** WoW Forever hides your party's health from addons as a number. Easy Heals never reads it: the bars, percent, colours, and red glow are drawn by the game's own widgets, which may show hidden values. Healing uses secure unit buttons, the same kind Blizzard's own frames use. Automated mock checks pass; **in-game validation is still pending**.
 
 ---
 
