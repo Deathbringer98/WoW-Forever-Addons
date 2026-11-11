@@ -35,6 +35,7 @@ Gives your unit frames live 3D portraits like the ones in Warcraft III. The head
 - `/lp big` opens a larger Warcraft III style portrait window that shows your target, or you when you have no target. Drag it to move it.
 
 In game, type `/lp help` for the full command list. Useful ones: `/lp on`, `/lp off`, `/lp fill 0.82` (how much of the circle the head fills), `/lp talk`, and `/lp status`.
+<img width="246" height="89" alt="image" src="https://github.com/user-attachments/assets/d2df76c2-a112-4be2-a35b-aacbc53e444c" />
 
 ---
 
