@@ -1,6 +1,6 @@
 # WoW Forever Addons
 
-A growing collection of addons by **Deathbringer98** for WoW Forever, covering inventory convenience, map customization, talent guidance, and in-game entertainment.
+A growing collection of addons by **Deathbringer98** for WoW Forever, covering inventory convenience, animated portraits, map customization, talent guidance, and in-game entertainment.
 
 ## Addons and downloads
 
@@ -9,6 +9,7 @@ Download individual addons below, or use **Code > Download ZIP** to get the whol
 | Addon | What it does | Package version | Download |
 | --- | --- | --- | --- |
 | **ForeverOneBag** | Combines your backpack and equipped bags into one inventory window. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/ForeverOneBag.zip) |
+| **Living Portraits** | Replaces flat unit frame portraits with live, animated 3D heads in the style of Warcraft III. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/LivingPortraits-1.0.0.zip) |
 | **SexierMap** | A map appearance and customization addon. | 2.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/SexierMap-2.0.0.zip) |
 | **TalentSuggester** | Provides guidance on talent choices while developing your character. | 1.1.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/TalentSuggester-1.1.0.zip) |
 | **Warcraft Pinball** | Adds a Warcraft-themed pinball minigame to play inside WoW. | 3.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/WarcraftPinball_Forever_v3.0.zip) |
@@ -22,6 +23,18 @@ View your carried inventory in one place instead of opening separate bag windows
     <img src="https://github.com/user-attachments/assets/5e5df2ff-5a8b-48c1-9e70-b18de9cfa679" alt="ForeverOneBag screenshot 1" width="558" />
   </a>
 </p>
+
+---
+
+### Living Portraits
+
+Gives your unit frames live 3D portraits like the ones in Warcraft III. The heads use the game's own idle animation, play a talking animation when that character speaks, and show a dead pose when the unit is dead.
+
+- Works on the default player, target, focus, pet, target of target, and party frames.
+- A unit that is too far away to be drawn keeps its normal flat portrait until it comes into view.
+- `/lp big` opens a larger Warcraft III style portrait window that shows your target, or you when you have no target. Drag it to move it.
+
+In game, type `/lp help` for the full command list. Useful ones: `/lp on`, `/lp off`, `/lp fill 0.82` (how much of the circle the head fills), `/lp talk`, and `/lp status`.
 
 ---
 
@@ -53,6 +66,9 @@ Customize the look of your map interface. SexierMap focuses on the visual side o
 
 A talent-choice helper for planning your character's progression. TalentSuggester focuses on recommendations to help you decide where to spend talent points.
 # In game type /tsug to open addon.
+
+Talent data and build picks come from [talentsforever.com](https://talentsforever.com), used under the [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license.
+
 <p align="center">
   <a href="https://github.com/user-attachments/assets/e5806a9b-aab3-4454-933b-157f33222105">
     <img src="https://github.com/user-attachments/assets/e5806a9b-aab3-4454-933b-157f33222105" alt="TalentSuggester screenshot 1" width="720" />
