@@ -1,6 +1,6 @@
 # WoW Forever Addons
 
-A growing collection of addons by **Deathbringer98** for WoW Forever, covering inventory convenience, easy healing, animated portraits, map customization, dungeon maps, rare alerts, spell suggestions, talent guidance, and in-game entertainment.
+A growing collection of addons by **Deathbringer98** for WoW Forever, covering questing help, inventory convenience, easy healing, animated portraits, map customization, dungeon maps, rare alerts, spell suggestions, talent guidance, and in-game entertainment.
 
 ## Addons and downloads
 
@@ -14,6 +14,7 @@ Download individual addons below, or use **Code > Download ZIP** to get the whol
 | **Easy Heals** | Click-to-heal frames made for new healers: click a name to heal it, with a key that shows every click. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/EasyHeals-1.0.0.zip) |
 | **ForeverOneBag** | Combines your backpack and equipped bags into one inventory window. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/ForeverOneBag.zip) |
 | **Living Portraits** | Replaces flat unit frame portraits with live, animated 3D heads in the style of Warcraft III. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/LivingPortraits-1.0.0.zip) |
+| **QuestiePlus** | An improved version of the original Questie: quest helper with bug fixes for WoW Forever, a level-up planner, quest chain tooltips, and more. Needs **QuestieDB**. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/QuestiePlus-1.0.0.zip) |
 | **Rare Alert** | Warns you when a rare mob shows up near you and lists your zone's rares with their spawn spots. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/RareAlert-1.0.0.zip) |
 | **SexierMap** | A map appearance and customization addon. | 2.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/SexierMap-2.0.0.zip) |
 | **Shift-Click Returns** | Shift-click a player's name to invite them to your group or guild, whisper, add as a friend, look up, or copy. | 1.1.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/Shift-Click_returns-1.1.0.zip) |
@@ -111,6 +112,42 @@ Gives your unit frames live 3D portraits like the ones in Warcraft III. The head
 
 In game, type `/lp help` for the full command list. Useful ones: `/lp on`, `/lp off`, `/lp fill 0.82` (how much of the circle the head fills), `/lp talk`, and `/lp status`.
 <img width="246" height="89" alt="image" src="https://github.com/user-attachments/assets/d2df76c2-a112-4be2-a35b-aacbc53e444c" />
+
+---
+
+### QuestiePlus
+
+An improved version of the original [Questie](https://github.com/Questie/Questie), based on Questie 12.7.0. It does everything Questie does (quest givers, objectives and turn-ins on the map and minimap, the quest tracker, the Journey) and adds fixes and new tools for WoW Forever.
+
+**You also need QuestieDB.** QuestiePlus reads quest data from the QuestieDB addon. Download `QuestieDB-x.y.z-Forever.zip` from the [QuestieDB releases](https://github.com/Questie/QuestieDB/releases/latest) and put its `QuestieDB` folder in `Interface/AddOns/` next to `QuestiePlus`. Without it, QuestiePlus shows as "missing dependency" in the AddOns list and won't load.
+
+**Turn off the original Questie.** QuestiePlus replaces it, so only one can run. If both are on, QuestiePlus offers to turn Questie off and reload for you. Settings do not carry over from Questie, because WoW stores each addon's settings separately.
+
+New features:
+
+- **QuestiePlus window** (type `/qp` or middle-click the minimap button):
+  - **Level-up planner:** your XP bar with the XP from your finished quests stacked on top, and whether handing them in levels you up.
+  - **Ready to hand in:** every finished quest with its XP and who to hand it to. The **Map** button opens the map with a waypoint on that NPC.
+  - **Grey quests:** quests far below your level, each with an **Abandon** button that always asks first, to free up quest log space.
+  - **Zone progress:** how many of your current zone's quests you have done, out of the ones your character can do.
+- **Quest chain on hover:** hover a quest in your quest log, a quest pin on the map, or a quest in the tracker to see the follow-up quests, their XP and money, and the total for the rest of the chain.
+- **Quest complete banner:** a big banner in the middle of the screen the moment you finish a quest's last objective.
+- **Hide the tracker in battlegrounds:** keeps the tracker out of the way in battlegrounds and arenas but still shows it in dungeons.
+- **Shift-click an objective icon** on the map to hide that objective's icons when they clutter the map. Right-click the quest in the tracker and pick **Show Icons** to bring them back.
+
+Fixed Questie bugs on WoW Forever:
+
+- The "you picked up an item that starts a quest" message no longer shows when you have turned chat messages off.
+- Map pins for an item a quest needs (for example the Fresh Zhevra Carcass for Ishamuhale) now disappear once you loot it.
+- Changing the icon style no longer brings back those pins on quests that are already complete.
+- Auto Accept no longer takes escort quests, so the NPC doesn't walk off before you are ready.
+- Minimap icons now show right after a hearthstone or portal, without having to move first.
+- Shift-click and ctrl-click on an NPC's patrol path now work like clicking the NPC's icon.
+- Less chance of the "tried to call the protected function" error when handing in quests. This one may not be fully fixed.
+
+All new features can be turned on or off in the new **QuestiePlus** tab of the settings (shift-click the minimap button).
+
+**Credits and license:** Questie is made by the Questie team (Aero, Logon, Muehe, TheCrux/BreakBB, Drejjmit, Dyaxler, Cheeq, TechnoHunter, Yttrium and many others). QuestiePlus is an unofficial fork and is **not supported by the Questie team**, so please report QuestiePlus problems here, not to them. Distributed under **GPL-3.0** like the Questie code it is built on; every change is listed in the included `CHANGES.md`. QuestiePlus has its own logo, not the Questie logo. Automated mock checks pass; **in-game validation is still pending**.
 
 ---
 
@@ -235,6 +272,8 @@ Lua 5.1 syntax and automated mock checks pass; **in-game validation is still pen
 5. Start the client, open **AddOns** at character selection, and enable the addon.
 
 The correct layout is `Interface/AddOns/<AddonName>/<AddonName>.toc`, with the addon's other files alongside it. Avoid an extra enclosing download folder.
+
+**QuestiePlus** also needs the **QuestieDB** addon installed the same way. See the QuestiePlus section above.
 
 **Downloading the entire repository?** Extract the repository ZIP first, then extract each individual addon ZIP you want to install. Copy the extracted addon folders into `Interface/AddOns/`; the ZIP files themselves are not installable addons.
 
