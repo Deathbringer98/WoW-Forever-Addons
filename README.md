@@ -8,11 +8,32 @@ Download individual addons below, or use **Code > Download ZIP** to get the whol
 
 | Addon | What it does | Package version | Download |
 | --- | --- | --- | --- |
+| **BetterWorldMap / Gatherer** | Reveals unexplored map areas and marks flight points, ore, herbs, and skinnable beasts. | 1.0.0 (fixed) | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/BetterWorldMapGatherer-fixed.zip) |
 | **ForeverOneBag** | Combines your backpack and equipped bags into one inventory window. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/ForeverOneBag.zip) |
 | **Living Portraits** | Replaces flat unit frame portraits with live, animated 3D heads in the style of Warcraft III. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/LivingPortraits-1.0.0.zip) |
 | **SexierMap** | A map appearance and customization addon. | 2.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/SexierMap-2.0.0.zip) |
 | **TalentSuggester** | Provides guidance on talent choices while developing your character. | 1.1.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/TalentSuggester-1.1.0.zip) |
 | **Warcraft Pinball** | Adds a Warcraft-themed pinball minigame to play inside WoW. | 3.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/WarcraftPinball_Forever_v3.0.zip) |
+
+### BetterWorldMap / Gatherer
+
+Adds a world-map panel with switches for unexplored map artwork, flight points, ore, herbs, and skinnable beasts.
+
+- Reveal data covers 84 map artworks from Forever's client data.
+- Ore and herb markers have a clickable legend to hide individual node types.
+- Beast markers show level ranges and skinning requirements, with a **Near my level** filter.
+- Flight points can be filtered by faction. Hover flight and beast markers for details.
+- Marker size is adjustable, and settings are saved between sessions.
+
+**Commands:** `/bwm` shows help; `/bwm status` shows settings. Toggle layers with `/bwm reveal`, `/bwm flights`, `/bwm ore`, `/bwm herbs`, or `/bwm beasts`. Use `/bwm both` for both factions, `/bwm level` for the beast level filter, `/bwm size 1.2` to resize markers, and `/bwm showall` to restore hidden node types.
+
+**Install:** Extract the ZIP and copy only the `BetterWorldMapGatherer` folder into `World of Warcraft/_forever_/Interface/AddOns/`. Restart the client and enable **BetterWorldMap / Gatherer**. The ZIP also includes developer tools, test notes, and an optional installer configured for the author's local paths; other users should use the manual installation steps.
+
+**Fixed build:** Corrects the old marker texture path. The Elwynn test now uses Forever's artwork ID and draws 18 reveal tiles. Lua 5.1 syntax and automated mock checks pass; **in-game validation is still pending**.
+
+**Data and license:** Map overlays and flight points were extracted from Forever client tables via wago.tools. Ore, herb, and beast positions derive from [CMaNGOS classic-db](https://github.com/cmangos/classic-db); this addon is distributed under **GPL-3.0**, as stated in its included README. These spawn locations describe the original game and may differ in Forever. A node marker indicates a possible spawn, not a currently available resource.
+
+---
 
 ### ForeverOneBag
 
