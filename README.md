@@ -1,6 +1,6 @@
 # WoW Forever Addons
 
-A growing collection of addons by **Deathbringer98** for WoW Forever, covering inventory convenience, animated portraits, map customization, talent guidance, and in-game entertainment.
+A growing collection of addons by **Deathbringer98** for WoW Forever, covering inventory convenience, animated portraits, map customization, dungeon maps, talent guidance, and in-game entertainment.
 
 ## Addons and downloads
 
@@ -9,6 +9,7 @@ Download individual addons below, or use **Code > Download ZIP** to get the whol
 | Addon | What it does | Package version | Download |
 | --- | --- | --- | --- |
 | **BetterWorldMap / Gatherer** | Reveals unexplored map areas and marks flight points, ore, herbs, and skinnable beasts. | 1.0.1 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/BetterWorldMapGatherer-1.0.1.zip) |
+| **DungeonGuide** | Maps of every dungeon and raid with every boss marked on them. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/DungeonGuide-1.0.0.zip) |
 | **ForeverOneBag** | Combines your backpack and equipped bags into one inventory window. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/ForeverOneBag.zip) |
 | **Living Portraits** | Replaces flat unit frame portraits with live, animated 3D heads in the style of Warcraft III. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/LivingPortraits-1.0.0.zip) |
 | **SexierMap** | A map appearance and customization addon. | 2.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/SexierMap-2.0.0.zip) |
@@ -32,6 +33,21 @@ Adds a world-map panel with switches for unexplored map artwork, flight points, 
 **Version 1.0.1:** Fixes map reveal artwork covering node, beast, and flight markers by keeping their frame order above the exploration pins, including after map refreshes. Regression mocks check changing frame levels/strata and unchanged node counts when reveal is toggled. Also includes the earlier marker texture-path fix. The Elwynn test now uses Forever's artwork ID and draws 18 reveal tiles. Lua 5.1 syntax and automated mock checks pass; **in-game validation is still pending**.
 
 **Data and license:** Map overlays and flight points were extracted from Forever client tables via wago.tools. Ore, herb, and beast positions derive from [CMaNGOS classic-db](https://github.com/cmangos/classic-db); this addon is distributed under **GPL-3.0**, as stated in its included README. These spawn locations describe the original game and may differ in Forever. A node marker indicates a possible spawn, not a currently available resource.
+
+---
+
+### DungeonGuide
+
+A dungeon atlas. Pick any dungeon or raid to see its map floor by floor, with every boss marked by a numbered pin that matches the boss list beside it.
+
+- Full maps for 26 classic dungeons and raids, from Ragefire Chasm to Naxxramas. The maps are the game's own dungeon map art, loaded from the client files; no images are shipped.
+- Multi-floor dungeons get a button per floor. A boss on another floor shows that floor's name; click it to jump there.
+- Dungeons that are new in WoW Forever have no map in the game files yet, so they show a boss list only.
+- Some bosses have no pin, such as event and summoned bosses, and the Upper Blackrock Spire bosses, which are not drawn on the Blackrock Spire maps.
+
+**Commands:** `/dg` opens the guide on the dungeon you are in. `/dg deadmines` opens a dungeon by name, `/dg auto` opens the guide whenever you enter a dungeon, and `/dg help` lists the commands.
+
+**Data and license:** Dungeon and boss lists come from Forever client tables via wago.tools. Boss positions derive from [CMaNGOS classic-db](https://github.com/cmangos/classic-db) spawn points; this addon is distributed under **GPL-3.0**, as stated in its included README. Positions describe the original game, and in dungeons with stacked floors a few bosses may show on the wrong floor. Automated mock checks pass; **in-game validation is still pending**.
 
 ---
 
