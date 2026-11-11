@@ -14,35 +14,70 @@ Download individual addons below, or use **Code > Download ZIP** to get the whol
 | **Warcraft Pinball** | Adds a Warcraft-themed pinball minigame to play inside WoW. | 3.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/WarcraftPinball_Forever_v3.0.zip) |
 
 ### ForeverOneBag
-<img width="558" height="453" alt="image" src="https://github.com/user-attachments/assets/5e5df2ff-5a8b-48c1-9e70-b18de9cfa679" />
 
 View your carried inventory in one place instead of opening separate bag windows. ForeverOneBag is designed to make browsing your backpack and equipped bags simpler.
 
+<p align="center">
+  <a href="https://github.com/user-attachments/assets/5e5df2ff-5a8b-48c1-9e70-b18de9cfa679">
+    <img src="https://github.com/user-attachments/assets/5e5df2ff-5a8b-48c1-9e70-b18de9cfa679" alt="ForeverOneBag screenshot 1" width="558" />
+  </a>
+</p>
+
+---
+
 ### SexierMap
-<img width="131" height="47" alt="image" src="https://github.com/user-attachments/assets/fdfe0edb-0a08-4489-82e0-335c91535c77" />
-
-
-
-<img width="509" height="418" alt="image" src="https://github.com/user-attachments/assets/b1341f79-9136-4a5a-8203-3a1d7bb048af" />
-
-
-
-<img width="485" height="352" alt="image" src="https://github.com/user-attachments/assets/a581afd2-c803-4e37-a7b4-8b69607d41d6" />
-
-
 
 Customize the look of your map interface. SexierMap focuses on the visual side of the UI for players who want a different map presentation.
 
+<p align="center">
+  <a href="https://github.com/user-attachments/assets/fdfe0edb-0a08-4489-82e0-335c91535c77">
+    <img src="https://github.com/user-attachments/assets/fdfe0edb-0a08-4489-82e0-335c91535c77" alt="SexierMap screenshot 1" width="131" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/user-attachments/assets/b1341f79-9136-4a5a-8203-3a1d7bb048af">
+    <img src="https://github.com/user-attachments/assets/b1341f79-9136-4a5a-8203-3a1d7bb048af" alt="SexierMap screenshot 2" width="509" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/user-attachments/assets/a581afd2-c803-4e37-a7b4-8b69607d41d6">
+    <img src="https://github.com/user-attachments/assets/a581afd2-c803-4e37-a7b4-8b69607d41d6" alt="SexierMap screenshot 3" width="485" />
+  </a>
+</p>
+
+---
+
 ### TalentSuggester
-<img width="909" height="892" alt="image" src="https://github.com/user-attachments/assets/e5806a9b-aab3-4454-933b-157f33222105" />
 
 A talent-choice helper for planning your character's progression. TalentSuggester focuses on recommendations to help you decide where to spend talent points.
 
+<p align="center">
+  <a href="https://github.com/user-attachments/assets/e5806a9b-aab3-4454-933b-157f33222105">
+    <img src="https://github.com/user-attachments/assets/e5806a9b-aab3-4454-933b-157f33222105" alt="TalentSuggester screenshot 1" width="720" />
+  </a>
+</p>
+
+---
+
 ### Warcraft Pinball
-<img width="766" height="1111" alt="image" src="https://github.com/user-attachments/assets/e824e011-60e1-4ba9-8099-a38b0342db9b" />
-<img width="178" height="57" alt="image" src="https://github.com/user-attachments/assets/9c5c65b5-8b92-41bf-8d2e-91c2be4801d2" />
 
 Take a break with a Warcraft-themed pinball game inside the client. The project includes flipper-and-ball gameplay, scoring, bumpers, lanes, and themed targets and effects. Version 3.0 focuses on improved ball physics, launch consistency, and a more readable interface.
+
+<p align="center">
+  <a href="https://github.com/user-attachments/assets/e824e011-60e1-4ba9-8099-a38b0342db9b">
+    <img src="https://github.com/user-attachments/assets/e824e011-60e1-4ba9-8099-a38b0342db9b" alt="Warcraft Pinball screenshot 1" width="560" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/user-attachments/assets/9c5c65b5-8b92-41bf-8d2e-91c2be4801d2">
+    <img src="https://github.com/user-attachments/assets/9c5c65b5-8b92-41bf-8d2e-91c2be4801d2" alt="Warcraft Pinball screenshot 2" width="178" />
+  </a>
+</p>
+
+---
 
 ## Installation
 
