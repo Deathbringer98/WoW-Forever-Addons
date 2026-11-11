@@ -20,7 +20,13 @@ View your carried inventory in one place instead of opening separate bag windows
 
 ### SexierMap
 <img width="131" height="47" alt="image" src="https://github.com/user-attachments/assets/fdfe0edb-0a08-4489-82e0-335c91535c77" />
+
+
+
 <img width="509" height="418" alt="image" src="https://github.com/user-attachments/assets/b1341f79-9136-4a5a-8203-3a1d7bb048af" />
+
+
+
 <img width="485" height="352" alt="image" src="https://github.com/user-attachments/assets/a581afd2-c803-4e37-a7b4-8b69607d41d6" />
 
 
