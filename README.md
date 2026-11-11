@@ -15,7 +15,7 @@ Download individual addons below, or use **Code > Download ZIP** to get the whol
 | **SexierMap** | A map appearance and customization addon. | 2.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/SexierMap-2.0.0.zip) |
 | **TalentSuggester** | Provides guidance on talent choices while developing your character. | 1.1.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/TalentSuggester-1.1.0.zip) |
 | **Warcraft Pinball** | Adds a Warcraft-themed pinball minigame to play inside WoW. | 3.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/WarcraftPinball_Forever_v3.0.zip) |
-| **Warcraft Tetris** | A falling-blocks puzzle game you play inside WoW. Type `/tetris`. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/WarcraftTetris-1.0.0.zip) |
+| **Warcraft Tetris** | A falling-blocks puzzle game you play inside WoW. Open it from the minimap button or with `/tetris`. | 1.1.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/WarcraftTetris-1.1.0.zip) |
 
 ### BetterWorldMap / Gatherer
 
@@ -136,7 +136,7 @@ Take a break with a Warcraft-themed pinball game inside the client. The project 
 
 ### Warcraft Tetris
 
-A falling-blocks puzzle game in its own window. Type `/tetris` to play.
+A falling-blocks puzzle game in its own window. Click the Tetris button on the minimap, pick it from the minimap addon menu, or type `/tetris` to play.
 
 - 10 x 20 board with a hold slot and a preview of the next three pieces.
 - Pieces come in shuffled sets of seven, turn with standard wall kicks, and wait half a second before locking.
@@ -146,7 +146,11 @@ A falling-blocks puzzle game in its own window. Type `/tetris` to play.
 
 **Keys:** arrows or WASD to move, Down to soft drop, Up or X to turn, Z to turn back, Space to hard drop (and start), C or Shift to hold, P to pause, Esc to close. Keys the game does not use, like Enter for chat, still work as normal.
 
-**Commands:** `/tetris` opens or closes the game, `/tetris new` starts a new game, `/tetris ghost` toggles the drop preview, `/tetris sound` toggles sounds, and `/tetris best` shows your records.
+**Buttons:** every setting is a button, so no commands are needed. The left side of the window has Start / Pause, Preview on/off, Sound on/off, Minimap on/off, and Center window. New game sits at the top left, and your best score and games played show on the right. Drag the minimap button to move it around the minimap.
+
+**Commands (optional):** `/tetris` opens or closes the game, `/tetris new` starts a new game, `/tetris ghost` toggles the drop preview, `/tetris sound` toggles sounds, `/tetris minimap` toggles the minimap button, and `/tetris best` shows your records.
+
+**Version 1.1.0:** adds the setting buttons, the minimap button, the minimap addon menu entry, and a games-played counter.
 
 Lua 5.1 syntax and automated mock checks pass; **in-game validation is still pending**. Tetris is a trademark of The Tetris Company; this fan-made game is not affiliated with or endorsed by The Tetris Company or Blizzard Entertainment.
 
