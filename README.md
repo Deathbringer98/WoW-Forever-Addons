@@ -12,6 +12,7 @@ Download individual addons below, or use **Code > Download ZIP** to get the whol
 | **DungeonGuide** | Maps of every dungeon and raid with every boss marked on them. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/DungeonGuide-1.0.0.zip) |
 | **ForeverOneBag** | Combines your backpack and equipped bags into one inventory window. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/ForeverOneBag.zip) |
 | **Living Portraits** | Replaces flat unit frame portraits with live, animated 3D heads in the style of Warcraft III. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/LivingPortraits-1.0.0.zip) |
+| **Rare Alert** | Warns you when a rare mob shows up near you and lists your zone's rares with their spawn spots. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/RareAlert-1.0.0.zip) |
 | **SexierMap** | A map appearance and customization addon. | 2.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/SexierMap-2.0.0.zip) |
 | **TalentSuggester** | Provides guidance on talent choices while developing your character. | 1.1.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/TalentSuggester-1.1.0.zip) |
 | **Warcraft Pinball** | Adds a Warcraft-themed pinball minigame to play inside WoW. | 3.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/WarcraftPinball_Forever_v3.0.zip) |
@@ -74,6 +75,22 @@ Gives your unit frames live 3D portraits like the ones in Warcraft III. The head
 
 In game, type `/lp help` for the full command list. Useful ones: `/lp on`, `/lp off`, `/lp fill 0.82` (how much of the circle the head fills), `/lp talk`, and `/lp status`.
 <img width="246" height="89" alt="image" src="https://github.com/user-attachments/assets/d2df76c2-a112-4be2-a35b-aacbc53e444c" />
+
+---
+
+### Rare Alert
+
+Warns you the moment a rare mob shows up near you, so you can find it and kill it first.
+
+- An alert banner shows the rare's name, level, and zone, with the raid warning sound, big warning text, a flashing taskbar icon, and a chat line.
+- Banner buttons: **Target it** targets the rare for you, **Map pin** marks where it was spotted, and **Dismiss** closes the banner.
+- Rares are spotted by their nameplates (turn on enemy nameplates with V), your target, your mouseover, and minimap markers. It knows 323 open-world rares and also catches anything the game marks as rare, so rares new in WoW Forever are caught too.
+- The zone panel lists every known rare in your zone with its level, the distance and direction to its nearest spawn spot, when you last saw it, and a **Pin** button. Right-click a rare to ignore it.
+- Every setting is a button: Alerts, Sound, Screen flash, Chat line, Minimap button, and Test alert.
+
+**Open it:** click the star button on the minimap, pick Rare Alert from the minimap addon menu, or type `/rare`. Alerts only work out of combat, because the game hides who a mob is from addons while you fight.
+
+**Data and license:** The rare list and spawn spots derive from [CMaNGOS classic-db](https://github.com/cmangos/classic-db); this addon is distributed under **GPL-3.0**, as stated in its included README. Zone shapes come from Forever client data via wago.tools. Spawn spots describe the original game and may differ in Forever. Automated mock checks pass; **in-game validation is still pending**.
 
 ---
 
