@@ -8,7 +8,7 @@ Download individual addons below, or use **Code > Download ZIP** to get the whol
 
 | Addon | What it does | Package version | Download |
 | --- | --- | --- | --- |
-| **BetterWorldMap / Gatherer** | Reveals unexplored map areas and marks flight points, ore, herbs, and skinnable beasts. | 1.0.0 (fixed) | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/BetterWorldMapGatherer-fixed.zip) |
+| **BetterWorldMap / Gatherer** | Reveals unexplored map areas and marks flight points, ore, herbs, and skinnable beasts. | 1.0.1 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/BetterWorldMapGatherer-1.0.1.zip) |
 | **ForeverOneBag** | Combines your backpack and equipped bags into one inventory window. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/ForeverOneBag.zip) |
 | **Living Portraits** | Replaces flat unit frame portraits with live, animated 3D heads in the style of Warcraft III. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/LivingPortraits-1.0.0.zip) |
 | **SexierMap** | A map appearance and customization addon. | 2.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/SexierMap-2.0.0.zip) |
@@ -27,9 +27,9 @@ Adds a world-map panel with switches for unexplored map artwork, flight points, 
 
 **Commands:** `/bwm` shows help; `/bwm status` shows settings. Toggle layers with `/bwm reveal`, `/bwm flights`, `/bwm ore`, `/bwm herbs`, or `/bwm beasts`. Use `/bwm both` for both factions, `/bwm level` for the beast level filter, `/bwm size 1.2` to resize markers, and `/bwm showall` to restore hidden node types.
 
-**Install:** Extract the ZIP and copy only the `BetterWorldMapGatherer` folder into `World of Warcraft/_forever_/Interface/AddOns/`. Restart the client and enable **BetterWorldMap / Gatherer**. The ZIP also includes developer tools, test notes, and an optional installer configured for the author's local paths; other users should use the manual installation steps.
+**Install:** Extract the ZIP and copy only the `BetterWorldMapGatherer` folder into `World of Warcraft/_forever_/Interface/AddOns/`. Restart the client and enable **BetterWorldMap / Gatherer**. The ZIP also includes developer tools and regression tests; only the addon folder belongs in `Interface/AddOns/`.
 
-**Fixed build:** Corrects the old marker texture path. The Elwynn test now uses Forever's artwork ID and draws 18 reveal tiles. Lua 5.1 syntax and automated mock checks pass; **in-game validation is still pending**.
+**Version 1.0.1:** Fixes map reveal artwork covering node, beast, and flight markers by keeping their frame order above the exploration pins, including after map refreshes. Regression mocks check changing frame levels/strata and unchanged node counts when reveal is toggled. Also includes the earlier marker texture-path fix. The Elwynn test now uses Forever's artwork ID and draws 18 reveal tiles. Lua 5.1 syntax and automated mock checks pass; **in-game validation is still pending**.
 
 **Data and license:** Map overlays and flight points were extracted from Forever client tables via wago.tools. Ore, herb, and beast positions derive from [CMaNGOS classic-db](https://github.com/cmangos/classic-db); this addon is distributed under **GPL-3.0**, as stated in its included README. These spawn locations describe the original game and may differ in Forever. A node marker indicates a possible spawn, not a currently available resource.
 
