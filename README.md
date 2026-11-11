@@ -15,6 +15,7 @@ Download individual addons below, or use **Code > Download ZIP** to get the whol
 | **SexierMap** | A map appearance and customization addon. | 2.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/SexierMap-2.0.0.zip) |
 | **TalentSuggester** | Provides guidance on talent choices while developing your character. | 1.1.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/TalentSuggester-1.1.0.zip) |
 | **Warcraft Pinball** | Adds a Warcraft-themed pinball minigame to play inside WoW. | 3.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/WarcraftPinball_Forever_v3.0.zip) |
+| **Warcraft Tetris** | A falling-blocks puzzle game you play inside WoW. Type `/tetris`. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/WarcraftTetris-1.0.0.zip) |
 
 ### BetterWorldMap / Gatherer
 
@@ -130,6 +131,24 @@ Take a break with a Warcraft-themed pinball game inside the client. The project 
     <img src="https://github.com/user-attachments/assets/9c5c65b5-8b92-41bf-8d2e-91c2be4801d2" alt="Warcraft Pinball screenshot 2" width="178" />
   </a>
 </p>
+
+---
+
+### Warcraft Tetris
+
+A falling-blocks puzzle game in its own window. Type `/tetris` to play.
+
+- 10 x 20 board with a hold slot and a preview of the next three pieces.
+- Pieces come in shuffled sets of seven, turn with standard wall kicks, and wait half a second before locking.
+- Pieces fall faster every 10 lines. Scoring rewards multi-line clears, combos, and back-to-back four-line clears, and your best score is saved.
+- Each piece is coloured for a school of magic or a faction: Frost, Holy, Arcane, Fel, Fire, Alliance, and Horde.
+- Entering combat closes the window and pauses the game, so your keys come straight back.
+
+**Keys:** arrows or WASD to move, Down to soft drop, Up or X to turn, Z to turn back, Space to hard drop (and start), C or Shift to hold, P to pause, Esc to close. Keys the game does not use, like Enter for chat, still work as normal.
+
+**Commands:** `/tetris` opens or closes the game, `/tetris new` starts a new game, `/tetris ghost` toggles the drop preview, `/tetris sound` toggles sounds, and `/tetris best` shows your records.
+
+Lua 5.1 syntax and automated mock checks pass; **in-game validation is still pending**. Tetris is a trademark of The Tetris Company; this fan-made game is not affiliated with or endorsed by The Tetris Company or Blizzard Entertainment.
 
 ---
 
