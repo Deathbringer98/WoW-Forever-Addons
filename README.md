@@ -14,7 +14,7 @@ Download individual addons below, or use **Code > Download ZIP** to get the whol
 | **Easy Heals** | Click-to-heal frames made for new healers: click a name to heal it, with a key that shows every click. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/EasyHeals-1.0.0.zip) |
 | **ForeverOneBag** | Combines your backpack and equipped bags into one inventory window. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/ForeverOneBag.zip) |
 | **Living Portraits** | Replaces flat unit frame portraits with live, animated 3D heads in the style of Warcraft III. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/LivingPortraits-1.0.0.zip) |
-| **QuestiePlus** | An improved version of the original Questie: quest helper with bug fixes for WoW Forever, a level-up planner, quest chain tooltips, and more. Needs **QuestieDB**. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/QuestiePlus-1.0.0.zip) |
+| **QuestiePlus** | An improved version of the original Questie: quest helper with bug fixes for WoW Forever, a suggested quest route drawn on your map, a level-up planner, quest chain tooltips, and more. Needs **QuestieDB**. | 1.1.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/QuestiePlus-1.1.0.zip) |
 | **Rare Alert** | Warns you when a rare mob shows up near you and lists your zone's rares with their spawn spots. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/RareAlert-1.0.0.zip) |
 | **SexierMap** | A map appearance and customization addon. | 2.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/SexierMap-2.0.0.zip) |
 | **Shift-Click Returns** | Shift-click a player's name to invite them to your group or guild, whisper, add as a friend, look up, or copy. | 1.1.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/Shift-Click_returns-1.1.0.zip) |
@@ -126,6 +126,7 @@ An improved version of the original [Questie](https://github.com/Questie/Questie
 New features:
 
 - **QuestiePlus window** (type `/qp` or middle-click the minimap button):
+  - **Suggested route:** the quickest order to do your quests in, starting where you stand. It goes to each objective (the nearest camp of the mobs, objects or items you need), hands each quest in once its objectives are done, and adds up to 8 nearby quests worth picking up. Every stop shows its distance and has a **Go** button that points the waypoint arrow at it, with an estimate of the total travel time. The route is also drawn on your world map as a gold line with numbered stops, updated every time you open the map. Turn the map line or the extra pick-ups off in the QuestiePlus settings.
   - **Level-up planner:** your XP bar with the XP from your finished quests stacked on top, and whether handing them in levels you up.
   - **Ready to hand in:** every finished quest with its XP and who to hand it to. The **Map** button opens the map with a waypoint on that NPC.
   - **Grey quests:** quests far below your level, each with an **Abandon** button that always asks first, to free up quest log space.
@@ -134,6 +135,8 @@ New features:
 - **Quest complete banner:** a big banner in the middle of the screen the moment you finish a quest's last objective.
 - **Hide the tracker in battlegrounds:** keeps the tracker out of the way in battlegrounds and arenas but still shows it in dungeons.
 - **Shift-click an objective icon** on the map to hide that objective's icons when they clutter the map. Right-click the quest in the tracker and pick **Show Icons** to bring them back.
+
+**Version 1.1.0** fixes 1.0.0 not starting ("Questie's TOC has a missing or invalid X-QuestieDB-Contract") and adds the suggested route. If you have 1.0.0, replace the whole `QuestiePlus` folder.
 
 Fixed Questie bugs on WoW Forever:
 
