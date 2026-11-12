@@ -1,6 +1,6 @@
 # WoW Forever Addons
 
-A growing collection of addons by **Deathbringer98** for WoW Forever, covering questing help, inventory convenience, easy healing, animated portraits, map customization, dungeon maps, rare alerts, spell suggestions, talent guidance, and in-game entertainment. Free and open source under the [GPL-3.0](LICENSE).
+A growing collection of addons by **Deathbringer98** for WoW Forever, covering questing help, inventory convenience, easy healing, animated portraits, map customization, dungeon maps, rare alerts, spell suggestions, talent guidance, a minimap button for every addon, and in-game games, including a mech battle you can play against bots or other players. Free and open source under the [GPL-3.0](LICENSE).
 
 ## My own spin on familiar addons
 
@@ -18,7 +18,9 @@ Download individual addons below, or use **Code > Download ZIP** to get the whol
 | **Casty** | Suggests the next spell to cast with a glowing box, for every class, and switches between PvE and PvP on its own. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/Casty-1.0.0.zip) |
 | **DungeonGuide** | Maps of every dungeon and raid with every boss marked on them. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/DungeonGuide-1.0.0.zip) |
 | **Easy Heals** | Click-to-heal frames made for new healers: click a name to heal it, with a key that shows every click. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/EasyHeals-1.0.0.zip) |
+| **Forever Addon Hub** | One minimap button that fans out a ring of buttons for every addon in this collection. Click one to open it, or get the download link for ones you do not have. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/ForeverAddonHub-1.0.0.zip) |
 | **ForeverOneBag** | Combines your backpack and equipped bags into one inventory window. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/ForeverOneBag.zip) |
+| **Gnomish Grudge Match** | Gnomes against goblins: build a battle mech from salvage, then watch it fight with real 3D mechs. Play bots, challenge other players, and let your group or guild watch. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/GnomishGrudgeMatch-1.0.0.zip) |
 | **Living Portraits** | Replaces flat unit frame portraits with live, animated 3D heads in the style of Warcraft III. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/LivingPortraits-1.0.0.zip) |
 | **QuestiePlus** | An improved version of the original Questie: quest helper with bug fixes for WoW Forever, a suggested quest route drawn on your map, a level-up planner, quest chain tooltips, and more. **QuestieDB is included** in the download. | 1.1.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/QuestiePlus-1.1.0.zip) |
 | **Rare Alert** | Warns you when a rare mob shows up near you and lists your zone's rares with their spawn spots. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/RareAlert-1.0.0.zip) |
@@ -96,6 +98,19 @@ Healing made easy for new players. Your group shows up as shiny health bars, and
 
 ---
 
+### Forever Addon Hub
+
+All your addons from this collection, one click away on the minimap.
+
+- **One button:** click the gear on the minimap and a ring of buttons fans out around the minimap, one for each addon here.
+- **Open anything:** click a button to open that addon. Some also do something on right-click, like BetterWorldMap opening the world map or Living Portraits toggling the big portrait. Hover a button to see what it does.
+- **Find what you are missing:** addons you have not installed show faded. Click one for its download link, ready to copy.
+- **Settings on right-click:** hide addons you do not have, keep the ring open after a click, or hide the hub button (`/hub` brings it back). Drag the gear to move it around the minimap.
+
+It is a separate small addon, so you get the buttons without installing any of the games. Automated mock checks pass; **in-game validation is still pending**.
+
+---
+
 ### ForeverOneBag
 
 View your carried inventory in one place instead of opening separate bag windows. ForeverOneBag is designed to make browsing your backpack and equipped bags simpler.
@@ -105,6 +120,24 @@ View your carried inventory in one place instead of opening separate bag windows
     <img src="https://github.com/user-attachments/assets/5e5df2ff-5a8b-48c1-9e70-b18de9cfa679" alt="ForeverOneBag screenshot 1" width="558" />
   </a>
 </p>
+
+---
+
+### Gnomish Grudge Match
+
+Gnomeregan Tinkers against Venture Co. Goblins. Build a battle mech from salvage, then watch it fight it out in an arena. Fun to play and just as fun to watch.
+
+- **Pick your side:** gnome mechs are Spider Tanks, Mechanostriders, Pounders, Steam Tonks and Alarm-o-Bots. Goblins get Venture Co. shredders and stompers.
+- **The workshop:** each round you get 3 choices for each of 5 parts: chassis, arms, power core, cannon and plating. Expect things like the Shrink Ray, Death Ray, Battle Chicken, Rocket Barrage, Oil Slick, Super Sapper Charge, Arcane Shield and Kaja'Cola Injector. Hover a part to see what it does, and check the scouting report to see what your rival was offered.
+- **The fight:** the mechs battle on their own, using the game's real 3D models and sounds, with rockets and bombs flying, floating damage numbers, screen shake and death animations. Watch at 1x, 2x or 4x, or skip. Best of 3 rounds wins.
+- **Bots:** Apprentice Tinker (easy), Chief Mekgineer (normal) and Trade Prince (hard, tests builds against yours before choosing).
+- **Play your friends:** challenge your target, a party member or anyone by name. Picks are sealed until both players lock in, so nobody can change parts after seeing yours. They need the addon too and must be on your faction.
+- **Spectate:** your group, and your guild if you allow it, can watch live player matches from the lobby.
+- **Records:** your wins, losses and biggest grudge are saved.
+
+**Open it:** click the gizmo on the minimap, pick it from the minimap addon menu, or type `/grudge`. Right-click the minimap button for a quick fight against a bot.
+
+Bot matches have been played in game. Player matches and spectating pass automated mock checks; **in-game validation of those is still pending**.
 
 ---
 
