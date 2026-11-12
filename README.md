@@ -1,6 +1,6 @@
 # WoW Forever Addons
 
-A growing collection of addons by **Deathbringer98** for WoW Forever, covering questing help, inventory convenience, easy healing, animated portraits, map customization, dungeon maps, rare alerts, spell suggestions, talent guidance, and in-game entertainment.
+A growing collection of addons by **Deathbringer98** for WoW Forever, covering questing help, inventory convenience, easy healing, animated portraits, map customization, dungeon maps, rare alerts, spell suggestions, talent guidance, and in-game entertainment. Free and open source under the [GPL-3.0](LICENSE).
 
 ## Addons and downloads
 
@@ -304,6 +304,25 @@ This README is the index for the addons currently available in this repository. 
 ## Bug reports and suggestions
 
 [Open an issue](https://github.com/Deathbringer98/WoW-Forever-Addons/issues) with the addon name, version, your client version, steps to reproduce the problem, and any Lua error message. Include a screenshot when it helps explain a UI issue.
+
+## License
+
+Every addon in this collection is free software under the **GNU General Public License v3.0** (GPL-3.0). The full text is in [`LICENSE`](LICENSE).
+
+Copyright (C) 2026 Matthew Menchinton ([Deathbringer98](https://github.com/Deathbringer98)), CircuitSpecter Studio.
+
+What this means for players and other addon makers:
+
+- You can use these addons for free, share them, and change them.
+- If you share a changed version, or an addon built on this code, it must also be released under GPL-3.0 with its source, and it must keep the credits and say what you changed.
+- The addons come with no warranty.
+
+Parts made by others keep their own credits and terms:
+
+- **QuestiePlus** is built on [Questie](https://github.com/Questie/Questie), and its download includes the unchanged [QuestieDB](https://github.com/Questie/QuestieDB), both by the Questie team under GPL-3.0. The Questie team asks forks not to use the Questie logo, so QuestiePlus has its own. Libraries in its `Libs` folder keep their own licenses.
+- **BetterWorldMap / Gatherer**, **DungeonGuide** and **Rare Alert** use spawn data from [CMaNGOS classic-db](https://github.com/cmangos/classic-db) (GPL-3.0).
+- **TalentSuggester** uses talent data and builds from [talentsforever.com](https://talentsforever.com) under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), which requires keeping that credit.
+- Game data read from the WoW Forever client (via [wago.tools](https://wago.tools)) belongs to Blizzard Entertainment.
 
 ## About
 
