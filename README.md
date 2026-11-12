@@ -2,6 +2,12 @@
 
 A growing collection of addons by **Deathbringer98** for WoW Forever, covering questing help, inventory convenience, easy healing, animated portraits, map customization, dungeon maps, rare alerts, spell suggestions, talent guidance, and in-game entertainment. Free and open source under the [GPL-3.0](LICENSE).
 
+## My own spin on familiar addons
+
+Many of these addons cover ideas that already exist in one form or another: quest helpers, click-to-heal frames, rare alerts, rotation helpers, minimap skins and so on. These are my own takes on those ideas, made for WoW Forever, and in some ways I have tried to improve on them, for example with clickable buttons instead of chat commands, settings anyone can find, and help built in for new players.
+
+Except for QuestiePlus, they are written from scratch rather than copied from those addons. QuestiePlus is the one direct fork: it is built on Questie's code, with fixes and new features added, and it credits the Questie team.
+
 ## Addons and downloads
 
 Download individual addons below, or use **Code > Download ZIP** to get the whole collection.
