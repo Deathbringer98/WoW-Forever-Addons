@@ -14,7 +14,7 @@ Download individual addons below, or use **Code > Download ZIP** to get the whol
 | **Easy Heals** | Click-to-heal frames made for new healers: click a name to heal it, with a key that shows every click. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/EasyHeals-1.0.0.zip) |
 | **ForeverOneBag** | Combines your backpack and equipped bags into one inventory window. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/ForeverOneBag.zip) |
 | **Living Portraits** | Replaces flat unit frame portraits with live, animated 3D heads in the style of Warcraft III. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/LivingPortraits-1.0.0.zip) |
-| **QuestiePlus** | An improved version of the original Questie: quest helper with bug fixes for WoW Forever, a suggested quest route drawn on your map, a level-up planner, quest chain tooltips, and more. Needs **QuestieDB**. | 1.1.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/QuestiePlus-1.1.0.zip) |
+| **QuestiePlus** | An improved version of the original Questie: quest helper with bug fixes for WoW Forever, a suggested quest route drawn on your map, a level-up planner, quest chain tooltips, and more. **QuestieDB is included** in the download. | 1.1.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/QuestiePlus-1.1.0.zip) |
 | **Rare Alert** | Warns you when a rare mob shows up near you and lists your zone's rares with their spawn spots. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/RareAlert-1.0.0.zip) |
 | **SexierMap** | A map appearance and customization addon. | 2.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/SexierMap-2.0.0.zip) |
 | **Shift-Click Returns** | Shift-click a player's name to invite them to your group or guild, whisper, add as a friend, look up, or copy. | 1.1.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/Shift-Click_returns-1.1.0.zip) |
@@ -119,7 +119,7 @@ In game, type `/lp help` for the full command list. Useful ones: `/lp on`, `/lp 
 
 An improved version of the original [Questie](https://github.com/Questie/Questie), based on Questie 12.7.0. It does everything Questie does (quest givers, objectives and turn-ins on the map and minimap, the quest tracker, the Journey) and adds fixes and new tools for WoW Forever.
 
-**You also need QuestieDB.** QuestiePlus reads quest data from the QuestieDB addon. Download `QuestieDB-x.y.z-Forever.zip` from the [QuestieDB releases](https://github.com/Questie/QuestieDB/releases/latest) and put its `QuestieDB` folder in `Interface/AddOns/` next to `QuestiePlus`. Without it, QuestiePlus shows as "missing dependency" in the AddOns list and won't load.
+**QuestieDB is included.** QuestiePlus reads quest data from the QuestieDB addon, so the download holds two folders: `QuestiePlus` and `QuestieDB`. Copy **both** into `Interface/AddOns/`. If `QuestieDB` is missing, QuestiePlus shows as "missing dependency" in the AddOns list and won't load. The included copy is the unchanged official Forever build 1.0.15 by the Questie team (GPL-3.0, license files included); newer versions come from the [QuestieDB releases](https://github.com/Questie/QuestieDB/releases/latest).
 
 **Turn off the original Questie.** QuestiePlus replaces it, so only one can run. If both are on, QuestiePlus offers to turn Questie off and reload for you. Settings do not carry over from Questie, because WoW stores each addon's settings separately.
 
@@ -137,6 +137,8 @@ New features:
 - **Shift-click an objective icon** on the map to hide that objective's icons when they clutter the map. Right-click the quest in the tracker and pick **Show Icons** to bring them back.
 
 **Version 1.1.0** fixes 1.0.0 not starting ("Questie's TOC has a missing or invalid X-QuestieDB-Contract") and adds the suggested route. If you have 1.0.0, replace the whole `QuestiePlus` folder.
+
+Quick checklist: unzip, drag `QuestiePlus` and `QuestieDB` into `Interface/AddOns/`, turn off the original Questie if you have it, restart the game, then type `/qp`.
 
 Fixed Questie bugs on WoW Forever:
 
@@ -276,7 +278,7 @@ Lua 5.1 syntax and automated mock checks pass; **in-game validation is still pen
 
 The correct layout is `Interface/AddOns/<AddonName>/<AddonName>.toc`, with the addon's other files alongside it. Avoid an extra enclosing download folder.
 
-**QuestiePlus** also needs the **QuestieDB** addon installed the same way. See the QuestiePlus section above.
+**QuestiePlus** comes with two folders, `QuestiePlus` and `QuestieDB`. Copy both into `Interface/AddOns/`.
 
 **Downloading the entire repository?** Extract the repository ZIP first, then extract each individual addon ZIP you want to install. Copy the extracted addon folders into `Interface/AddOns/`; the ZIP files themselves are not installable addons.
 
