@@ -28,7 +28,7 @@ Download individual addons below, or use **Code > Download ZIP** to get the whol
 | **Shift-Click Returns** | Shift-click a player's name to invite them to your group or guild, whisper, add as a friend, look up, or copy. | 1.1.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/Shift-Click_returns-1.1.0.zip) |
 | **TalentSuggester** | Provides guidance on talent choices while developing your character. | 1.1.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/TalentSuggester-1.1.0.zip) |
 | **Warcraft Pinball** | Adds a Warcraft-themed pinball minigame to play inside WoW. | 3.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/WarcraftPinball_Forever_v3.0.zip) |
-| **Warcraft Tetris** | A falling-blocks puzzle game you play inside WoW. Open it from the minimap button or with `/tetris`. | 1.1.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/WarcraftTetris-1.1.0.zip) |
+| **Warcraft Tetris** | A falling-blocks puzzle game you play inside WoW, solo or versus a bot or another player, with garbage lines sent between boards. Open it from the minimap button or with `/tetris`. | 1.2.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/WarcraftTetris-1.2.0.zip) |
 
 ### BetterWorldMap / Gatherer
 
@@ -290,7 +290,7 @@ Take a break with a Warcraft-themed pinball game inside the client. The project 
 
 ### Warcraft Tetris
 
-A falling-blocks puzzle game in its own window. Click the Tetris button on the minimap, pick it from the minimap addon menu, or type `/tetris` to play.
+A falling-blocks puzzle game in its own window, on your own or versus a bot or another player. Click the Tetris button on the minimap, pick it from the minimap addon menu, or type `/tetris` to play.
 
 - 10 x 20 board with a hold slot and a preview of the next three pieces.
 - Pieces come in shuffled sets of seven, turn with standard wall kicks, and wait half a second before locking.
@@ -298,11 +298,22 @@ A falling-blocks puzzle game in its own window. Click the Tetris button on the m
 - Each piece is coloured for a school of magic or a faction: Frost, Holy, Arcane, Fel, Fire, Alliance, and Horde.
 - Entering combat closes the window and pauses the game, so your keys come straight back.
 
+**Versus mode:** click **Versus** on the left of the game window (or type `/tetris vs`).
+
+- **Same pieces for both of you**, in the same order, so it comes down to skill.
+- **Garbage lines:** clearing 2, 3 or 4 lines sends 1, 2 or 4 grey rows to your rival, with extra for back-to-back four-line clears and combos. Incoming garbage shows as a red bar beside your board and rises after your next piece that clears nothing, unless your own clears cancel it first.
+- **Pieces speed up** as the match goes on, and the first to top out loses. There is no pausing in a match.
+- **Bots:** Kobold Tunneler (easy), Goblin Sapper (normal) and Dalaran Archmage (hard). Tuned with simulated matches so casual players can beat easy, decent players beat normal, and hard is a real fight.
+- **Players:** challenge your target, a party member or anyone by name. They get a popup to accept, and their board shows live beside yours. They need Warcraft Tetris 1.2.0 or newer and must be on your faction.
+- **Records:** your versus wins and losses, and your record against each rival, are saved. Rematch with one click.
+
 **Keys:** arrows or WASD to move, Down to soft drop, Up or X to turn, Z to turn back, Space to hard drop (and start), C or Shift to hold, P to pause, Esc to close. Keys the game does not use, like Enter for chat, still work as normal.
 
 **Buttons:** every setting is a button, so no commands are needed. The left side of the window has Start / Pause, Preview on/off, Sound on/off, Minimap on/off, and Center window. New game sits at the top left, and your best score and games played show on the right. Drag the minimap button to move it around the minimap.
 
-**Commands (optional):** `/tetris` opens or closes the game, `/tetris new` starts a new game, `/tetris ghost` toggles the drop preview, `/tetris sound` toggles sounds, `/tetris minimap` toggles the minimap button, and `/tetris best` shows your records.
+**Commands (optional):** `/tetris` opens or closes the game, `/tetris new` starts a new game, `/tetris ghost` toggles the drop preview, `/tetris sound` toggles sounds, `/tetris minimap` toggles the minimap button, `/tetris best` shows your records, and `/tetris vs` opens versus mode (`/tetris vs easy` plays a bot, `/tetris vs Name` challenges a player).
+
+**Version 1.2.0:** adds versus mode against bots and other players.
 
 **Version 1.1.0:** adds the setting buttons, the minimap button, the minimap addon menu entry, and a games-played counter.
 
