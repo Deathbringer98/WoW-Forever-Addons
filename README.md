@@ -18,7 +18,7 @@ Download individual addons below, or use **Code > Download ZIP** to get the whol
 | **Casty** | Suggests the next spell to cast with a glowing box, for every class, and switches between PvE and PvP on its own. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/Casty-1.0.0.zip) |
 | **DungeonGuide** | Maps of every dungeon and raid with every boss marked on them. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/DungeonGuide-1.0.0.zip) |
 | **Easy Heals** | Click-to-heal frames made for new healers: click a name to heal it, with a key that shows every click. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/EasyHeals-1.0.0.zip) |
-| **Forever Addon Hub** | One minimap button that fans out a ring of buttons for every addon in this collection. Click one to open it, or get the download link for ones you do not have. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/ForeverAddonHub-1.0.0.zip) |
+| **Forever Addon Hub** | One minimap button that fans out a ring of buttons for every addon in this collection, and tucks every other minimap button into it so your minimap stays clean. | 1.1.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/ForeverAddonHub-1.1.0.zip) |
 | **ForeverOneBag** | Combines your backpack and equipped bags into one inventory window. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/ForeverOneBag.zip) |
 | **Gnomish Grudge Match** | Gnomes against goblins: build a battle mech from salvage, then watch it fight with real 3D mechs. Play bots, challenge other players, and let your group or guild watch. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/GnomishGrudgeMatch-1.0.0.zip) |
 | **Living Portraits** | Replaces flat unit frame portraits with live, animated 3D heads in the style of Warcraft III. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/LivingPortraits-1.0.0.zip) |
@@ -104,10 +104,13 @@ All your addons from this collection, one click away on the minimap.
 
 - **One button:** click the gear on the minimap and a ring of buttons fans out around the minimap, one for each addon here.
 - **Open anything:** click a button to open that addon. Some also do something on right-click, like BetterWorldMap opening the world map or Living Portraits toggling the big portrait. Hover a button to see what it does.
+- **A clean minimap:** every addon's own minimap button is tucked away, so the hub is the only one left. That includes other addons that use the common LibDBIcon minimap button: they get a button in the ring too, and clicking it works just like their old minimap button.
 - **Find what you are missing:** addons you have not installed show faded. Click one for its download link, ready to copy.
-- **Settings on right-click:** hide addons you do not have, keep the ring open after a click, or hide the hub button (`/hub` brings it back). Drag the gear to move it around the minimap.
+- **Settings on right-click:** hide addons you do not have, keep the ring open after a click, turn tucking off to put every button back on the minimap, or hide the hub button (`/hub` brings it back). Drag the gear to move it around the minimap.
 
-It is a separate small addon, so you get the buttons without installing any of the games. Automated mock checks pass; **in-game validation is still pending**.
+It is a separate small addon, so you get the buttons without installing any of the games.
+
+**Version 1.1.0:** tucks every addon's own minimap button into the hub ring, with a second, wider ring when there are lots of buttons. Automated mock checks pass; **in-game validation is still pending**.
 
 ---
 
