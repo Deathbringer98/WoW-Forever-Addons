@@ -1,6 +1,6 @@
 # WoW Forever Addons
 
-A growing collection of addons by **Deathbringer98** for WoW Forever, covering questing help, inventory convenience, easy healing, animated portraits, map customization, dungeon maps, rare alerts, spell suggestions, talent guidance, a minimap button for every addon, and in-game games, including a mech battle you can play against bots or other players. Free and open source under the [GPL-3.0](LICENSE).
+A growing collection of addons by **Deathbringer98** for WoW Forever, covering questing help, profession leveling, a class-filtered loot atlas, inventory convenience, easy healing, animated portraits, map customization, dungeon maps, rare alerts, spell suggestions, talent guidance, a minimap button for every addon, and in-game games, including a mech battle you can play against bots or other players. Free and open source under the [GPL-3.0](LICENSE) (Loot Atlas under GPL-2.0).
 
 ## My own spin on familiar addons
 
@@ -18,10 +18,12 @@ Download individual addons below, or use **Code > Download ZIP** to get the whol
 | **Casty** | Suggests the next spell to cast with a glowing box, for every class, and switches between PvE and PvP on its own. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/Casty-1.0.0.zip) |
 | **DungeonGuide** | Maps of every dungeon and raid with every boss marked on them. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/DungeonGuide-1.0.0.zip) |
 | **Easy Heals** | Click-to-heal frames made for new healers: click a name to heal it, with a key that shows every click. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/EasyHeals-1.0.0.zip) |
-| **Forever Addon Hub** | One minimap button that fans out a ring of buttons for every addon in this collection, and tucks every other minimap button into it so your minimap stays clean. | 1.1.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/ForeverAddonHub-1.1.0.zip) |
+| **Forever Addon Hub** | One minimap button that fans out a ring of buttons for every addon in this collection, and tucks every other minimap button into it so your minimap stays clean. | 1.2.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/ForeverAddonHub-1.2.0.zip) |
 | **ForeverOneBag** | Combines your backpack and equipped bags into one inventory window. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/ForeverOneBag.zip) |
 | **Gnomish Grudge Match** | Gnomes against goblins: build a battle mech from salvage, then watch it fight with real 3D mechs. Play bots, challenge other players, and let your group or guild watch. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/GnomishGrudgeMatch-1.0.0.zip) |
 | **Living Portraits** | Replaces flat unit frame portraits with live, animated 3D heads in the style of Warcraft III. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/LivingPortraits-1.0.0.zip) |
+| **Loot Atlas** | What every dungeon boss, raid boss, world boss and rare drops, filtered for your class, with item search and map pins for over 350 world rares. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/LootAtlas-1.0.0.zip) |
+| **Profession Guide** | Level every profession from 1 to 300: what to craft at each skill, the materials you need, and which mobs to farm them from, with map waypoints. | 1.0.1 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/ProfessionGuide-1.0.1.zip) |
 | **QuestiePlus** | An improved version of the original Questie: quest helper with bug fixes for WoW Forever, a suggested quest route drawn on your map, a level-up planner, quest chain tooltips, and more. **QuestieDB is included** in the download. | 1.1.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/QuestiePlus-1.1.0.zip) |
 | **Rare Alert** | Warns you when a rare mob shows up near you and lists your zone's rares with their spawn spots. | 1.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/RareAlert-1.0.0.zip) |
 | **SexierMap** | A map appearance and customization addon. | 2.0.0 | [Download](https://github.com/Deathbringer98/WoW-Forever-Addons/raw/refs/heads/main/SexierMap-2.0.0.zip) |
@@ -110,7 +112,7 @@ All your addons from this collection, one click away on the minimap.
 
 It is a separate small addon, so you get the buttons without installing any of the games.
 
-**Version 1.1.0:** tucks every addon's own minimap button into the hub ring, with a second, wider ring when there are lots of buttons. Automated mock checks pass; **in-game validation is still pending**.
+**Version 1.2.0:** adds buttons for Profession Guide and Loot Atlas, and right-click on Warcraft Tetris opens versus mode. Version 1.1.0 tucked every addon's own minimap button into the hub ring, with a second, wider ring when there are lots of buttons. Tested in game.
 
 ---
 
@@ -154,6 +156,40 @@ Gives your unit frames live 3D portraits like the ones in Warcraft III. The head
 
 In game, type `/lp help` for the full command list. Useful ones: `/lp on`, `/lp off`, `/lp fill 0.82` (how much of the circle the head fills), `/lp talk`, and `/lp status`.
 <img width="246" height="89" alt="image" src="https://github.com/user-attachments/assets/d2df76c2-a112-4be2-a35b-aacbc53e444c" />
+
+---
+
+### Loot Atlas
+
+What every dungeon and raid boss drops, filtered for your class, so you know where to go for your next upgrade.
+
+- **Every instance:** all 33 dungeons and raids from Ragefire Chasm to Naxxramas, in level order, with every boss and its drops. Dungeon rares are marked.
+- **World bosses and world epics:** Azuregos, Lord Kazzak and the Emerald Dragons, plus the rare epics any mob can drop.
+- **Class filter:** starts on your class. **Best for class** shows your best armor type, weapons you can use and the stats you want, so a strength cloth robe is hidden for a mage. **Usable by class** shows everything you can equip, and **Everything** turns the filter off. Class set pieces for other classes are hidden. Click the class button to browse for another class, right-click to go back to yours.
+- **Search:** type 3 letters or more to find an item anywhere, with the boss and dungeon that drops it.
+- **World rares:** over 350 open-world rare mobs with level, zone and a **Map** button that puts a waypoint on your map. "Near my level" shows only the ones you can fight. Their loot is not in any loot table, so the list shows where to find them.
+
+**Open it:** click the bag on the minimap, pick it from the minimap addon menu, or type `/la`. Shift-click an item to link it, Ctrl-click to try it on.
+
+**Data and license:** The loot tables come from [AtlasLootClassic](https://github.com/Hoizame/AtlasLootClassic) by Hoizame and contributors, which is licensed under GPL-2.0. Because of that, **Loot Atlas is released under GPL-2.0** (its download includes `LICENSE-GPL2.txt`), unlike the rest of this collection. Rare mob locations come from QuestieDB (GPL-3.0); item and zone details come from Forever client tables via wago.tools. Tested in game.
+
+---
+
+### Profession Guide
+
+Level every profession from 1 to 300, and know where to farm the materials.
+
+- **Crafting professions:** Alchemy, Blacksmithing, Enchanting, Engineering, Leatherworking, Tailoring, Cooking and First Aid each get a plan: which recipe to craft, from what skill to what skill, and about how many times. The step you are on is highlighted using your real skill.
+- **Built for Forever:** Forever reworked the professions, with new recipes and different breakpoints (healing potions are First Aid here), so the plans are built from Forever's own recipe data instead of a Classic guide.
+- **Materials:** every material shows how many you have and how many you need. The **Shopping list** totals everything you still need up to your current cap.
+- **Craft now:** reads your open profession window and lists the recipes that still give skill, best first.
+- **Gathering:** the highest level you can skin, with beasts to farm near it; every ore and herb by the skill it needs; and where to fish at your skill.
+- **Farm materials:** cloth, leather, elementals, spider silk, venom sacs and more, each with the mobs that drop it, their levels and zones, and a **Map** button for a waypoint. Item tooltips say where to farm a material too.
+- **Trainer reminders:** near your cap it tells you to train the next rank and the character level that needs.
+
+**Open it:** click the book on the minimap (right-click for farm spots), pick it from the minimap addon menu, or type `/pg`. `/pg tailoring` opens a profession and `/pg farm` the farm list.
+
+**Data and license:** Recipe data comes from Forever client tables via wago.tools; mob levels and spawn points come from QuestieDB (GPL-3.0). Forever doesn't say at which skill a trainer teaches each recipe, so some learn levels are estimates; the colours in your profession window and **Craft now** have the final say. Tested in game.
 
 ---
 
@@ -360,7 +396,7 @@ This README is the index for the addons currently available in this repository. 
 
 ## License
 
-Every addon in this collection is free software under the **GNU General Public License v3.0** (GPL-3.0). The full text is in [`LICENSE`](LICENSE).
+Every addon in this collection is free software under the **GNU General Public License v3.0** (GPL-3.0), except **Loot Atlas**, which is under GPL-2.0 (see below). The full text is in [`LICENSE`](LICENSE).
 
 Copyright (C) 2026 Matthew Menchinton ([Deathbringer98](https://github.com/Deathbringer98)), CircuitSpecter Studio.
 
@@ -374,6 +410,8 @@ Parts made by others keep their own credits and terms:
 
 - **QuestiePlus** is built on [Questie](https://github.com/Questie/Questie), and its download includes the unchanged [QuestieDB](https://github.com/Questie/QuestieDB), both by the Questie team under GPL-3.0. The Questie team asks forks not to use the Questie logo, so QuestiePlus has its own. Libraries in its `Libs` folder keep their own licenses.
 - **BetterWorldMap / Gatherer**, **DungeonGuide** and **Rare Alert** use spawn data from [CMaNGOS classic-db](https://github.com/cmangos/classic-db) (GPL-3.0).
+- **Loot Atlas** uses loot tables from [AtlasLootClassic](https://github.com/Hoizame/AtlasLootClassic) by Hoizame and contributors (GPL-2.0), so Loot Atlas itself is released under **GPL-2.0**; its download includes the license text as `LICENSE-GPL2.txt`.
+- **Profession Guide** and **Loot Atlas** use mob levels and spawn points from [QuestieDB](https://github.com/Questie/QuestieDB) (GPL-3.0).
 - **TalentSuggester** uses talent data and builds from [talentsforever.com](https://talentsforever.com) under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), which requires keeping that credit.
 - Game data read from the WoW Forever client (via [wago.tools](https://wago.tools)) belongs to Blizzard Entertainment.
 
